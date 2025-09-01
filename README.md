@@ -14,9 +14,9 @@
 
 ## Demo Links
 
-- [Smart Recipe Generator - Vercel 1](smart-recipe-generator-rouge.vercel.app)  
-- [Smart Recipe Generator - Vercel 2](smart-recipe-generator-git-main-jay-bahadur-singhs-projects.vercel.app)  
-- [Smart Recipe Generator - Vercel 3](smart-recipe-generator-ktlhgt3d7-jay-bahadur-singhs-projects.vercel.app)  
+- [Smart Recipe Generator - Vercel 1](https://smart-recipe-generator-rouge.vercel.app/)  
+- [Smart Recipe Generator - Vercel 2](https://smart-recipe-generator-git-main-jay-bahadur-singhs-projects.vercel.app/)  
+- [Smart Recipe Generator - Vercel 3](https://smart-recipe-generator-ktlhgt3d7-jay-bahadur-singhs-projects.vercel.app/)  
 
 ## GitHub Repository
 
