@@ -1,0 +1,220 @@
+/* --- New Vibrant Color Theme --- */
+:root {
+    --bg-color: #f5f7fa;
+    --card-bg: #ffffff;
+    --text-color: #22223b;
+    --accent: #ff6f61;
+    --accent-hover: #ff8a80;
+    --gradient-primary: linear-gradient(135deg, #f5f7fa 0%, #c9d6ff 100%);
+    --gradient-secondary: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    --gradient-accent: linear-gradient(135deg, #ff6f61 0%, #ff8a80 100%);
+    --gradient-dark: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    --gradient-card: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+    --gradient-button: linear-gradient(135deg, #ff6f61 0%, #ff8a80 100%);
+    --gradient-button-hover: linear-gradient(135deg, #ff8a80 0%, #ff6f61 100%);
+    --gradient-header: linear-gradient(135deg, #fcb69f 0%, #ffecd2 100%);
+    --gradient-footer: linear-gradient(135deg, #f5f7fa 0%, #c9d6ff 100%);
+}
+
+/* ...existing code... */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--gradient-primary);
+    background-attachment: fixed;
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--gradient-header);
+    color: var(--text-color);
+    box-shadow: 0 2px 8px rgba(255, 111, 97, 0.15);
+    border-bottom: 1px solid rgba(255, 111, 97, 0.2);
+}
+
+header h1 {
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: var(--text-color);
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+input,
+select,
+button {
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 111, 97, 0.2);
+    font-size: 0.95rem;
+}
+
+input,
+select {
+    width: 100%;
+    background: var(--gradient-dark);
+    color: var(--text-color);
+    transition: all 0.2s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(255, 111, 97, 0.1);
+    background: #fff5f5;
+}
+
+button {
+    background: var(--gradient-button);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    box-shadow: 0 2px 4px rgba(255, 111, 97, 0.2);
+    min-width: 120px;
+}
+
+button:hover {
+    background: var(--gradient-button-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(255, 111, 97, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.common-ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+.ingredient-btn {
+    flex: 1 0 auto;
+    background: var(--gradient-dark);
+    border: 1px solid rgba(255, 111, 97, 0.2);
+    color: var(--text-color);
+    transition: all 0.2s ease;
+}
+
+.ingredient-btn:hover {
+    background: var(--gradient-accent);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.filters {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--gradient-card);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.1);
+    border: 1px solid rgba(255, 111, 97, 0.1);
+}
+
+.filters h2 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+    font-size: 1.3rem;
+}
+
+#recipesContainer {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.recipe-card {
+    background: var(--gradient-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.1);
+    transition: all 0.2s ease;
+    border: 1px solid rgba(255, 111, 97, 0.1);
+    position: relative;
+}
+
+.recipe-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-accent);
+    border-radius: 8px 8px 0 0;
+}
+
+.recipe-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 111, 97, 0.15);
+    border-color: rgba(255, 111, 97, 0.3);
+}
+
+.recipe-card h3 {
+    margin-bottom: 0.75rem;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.recipe-card p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    background: var(--gradient-footer);
+    color: var(--text-color);
+    border-top: 1px solid rgba(255, 111, 97, 0.1);
+}
+
+footer p {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}

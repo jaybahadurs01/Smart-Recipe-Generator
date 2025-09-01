@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Recipe Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1> Smart Recipe Generator</h1>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <h2>Enter Ingredients</h2>
+      <input type="text" id="ingredientsInput" placeholder="e.g., tomato, onion, cheese" />
+      <button id="generateBtn">Generate Recipes</button>
+      <button id="randomBtn">🎲 Random Recipe</button>
+      <button id="clearBtn">🧹 Clear Filters</button>
+
+      <h3>Common Ingredients</h3>
+      <div class="common-ingredients">
+        <button class="ingredient-btn">Tomato</button>
+        <button class="ingredient-btn">Onion</button>
+        <button class="ingredient-btn">Garlic</button>
+        <button class="ingredient-btn">Chicken</button>
+        <button class="ingredient-btn">Cheese</button>
+      </div>
+    </section>
+
+    <section class="filters">
+      <h2>Filters</h2>
+      <label>
+        Dietary Preference:
+        <select id="dietFilter">
+          <option value="">Any</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="vegan">Vegan</option>
+          <option value="gluten-free">Gluten-Free</option>
+        </select>
+      </label>
+      <label>
+        Max Cooking Time:
+        <select id="timeFilter">
+          <option value="">No Limit</option>
+          <option value="15">15 min</option>
+          <option value="30">30 min</option>
+          <option value="60">1 hour</option>
+        </select>
+      </label>
+      <label>
+        Search Recipe:
+        <input type="text" id="searchInput" placeholder="Type recipe name..." />
+      </label>
+      <label>
+        Sort By:
+        <select id="sortSelect">
+          <option value="">--Select--</option>
+          <option value="time">Cooking Time</option>
+          <option value="difficulty">Difficulty</option>
+          <option value="calories">Calories</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="recipesSection">
+      <h2>Recipes</h2>
+      <div id="recipesContainer"></div>
+    </section>
+
+    <section id="favoritesSection">
+      <h2>❤️ Favorites</h2>
+      <div id="favoritesContainer"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ for food lovers | Smart Recipe Generator</p>
+  </footer>
+
+  <script src="script.js"></script>
+  
+
+</body>
+</html>
